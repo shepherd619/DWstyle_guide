@@ -16,11 +16,12 @@
 <body>
 <div class="style_guide wrapper">
     <!-- Sidebar  -->
-    <nav id="sidebar">
+    <nav id="sidebar" class="active">
         <div class="sidebar-header">
             <p>대원CTS<br>STYLE GUIDE</p>
-            <button type="button" class="sidebarCollapse d-md-none">
+            <button type="button" class="sidebarCollapse">
                 <i class="bi bi-x"></i>
+                <i class="bi bi-list"></i>
             </button>
         </div>
 
@@ -45,7 +46,7 @@
     </nav>
 
     <div class="contents">
-        <button type="button" class="btn btn-secondary sidebarCollapse mt-4"><i class="bi bi-list"></i> 메뉴 Toggle</button>
+        <div class="mt-5"></div>
 
         <h2>Heading</h2>
         <div class="box_figure">
@@ -55,6 +56,18 @@
             <h4>제목 스타일 4<small class="text-muted"> (H4)</small></h4>
             <h5>제목 스타일 5<small class="text-muted"> (H5)</small></h5>
             <h6>제목 스타일 6<small class="text-muted"> (H6)</small></h6>
+        </div>
+
+        <h2>Alignment</h2>
+        <div class="box_figure">
+            <p class="text-left">좌측 정렬</p>
+            <p class="text-center">가운데 정렬</p>
+            <p class="text-right">우측 정렬</p>
+
+            <p class="text-sm-right">sm이상 부터 우측 정렬</p>
+            <p class="text-md-right">md이상 부터 우측 정렬</p>
+            <p class="text-lg-right">lg이상 부터 우측 정렬</p>
+            <p class="text-xl-right">xl이상 부터 우측 정렬</p>
         </div>
 
         <h2>emphasis</h2>
@@ -89,9 +102,26 @@
             </blockquote>
         </div>
 
-        <h2></h2>
+        <h2>Wrapping and overflow</h2>
         <div class="box_figure">
-            공백
+            <div class="badge badge-primary text-wrap" style="width: 6rem;">
+                이 텍스트는 부모보다 넘치게 되면 줄바꿈 된다.
+            </div>
+            <div class="text-nowrap bd-highlight" style="width: 8rem;">
+                이 텍스트는 부모요소보다 넘쳐도 줄바꿈되지 않는다.
+            </div>
+
+            <!-- Block level -->
+            <div class="row">
+                <div class="col-2 text-truncate">
+                    블록 레벨 말줄임 처리는 text-truncate 클래스만 넣어도 가능하다.
+                </div>
+            </div>
+
+            <!-- Inline level -->
+            <span class="d-inline-block text-truncate" style="max-width: 150px;">
+              인라인 요소는 d-inline-block를 추가로 넣어주어야 한다.
+            </span>
         </div>
 
     </div>

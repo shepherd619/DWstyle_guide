@@ -285,8 +285,6 @@
 
 /* 스와이퍼 */
 // external css https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.css
-// tat for styling is from line 50 >
-
 .swiper-container {
   width: 100%;
 }
@@ -349,6 +347,7 @@
     color: #ffffff;
     font-size: calc(5vw);
     letter-spacing: -1px;
+    -ms-transform: translateY(-5%) scale(.8); /* IE 11 */
     transform: translateY(-5%) scale(.8);
     transition: 1s ease;
     text-transform: uppercase;
@@ -356,6 +355,7 @@
   }
   &-active h2 {
     opacity: 1;
+    -ms-transform: translateY(0%) scale(1); /* IE 11 */
     transform: translateY(0%) scale(1);
     transition: 1s ease;
   }
