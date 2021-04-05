@@ -239,6 +239,7 @@
     position: absolute;
     right: 0;
     bottom: 0;
+    -ms-transform: translateY(100%) translateY(.5rem); /* IE 11 */
     transform: translateY(calc(100% + .5rem));
   }
   .custom-control-label {
