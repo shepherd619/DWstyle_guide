@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>대원CTS 스타일가이드</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="../bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/guide.css">
+    <script src="../dist/jquery-3.6.0.min.js"></script>
+    <script src="../bootstrap/dist/js/bootstrap.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</head>
+<body>
+<div class="style_guide wrapper">
+    <!-- Sidebar  -->
+    <nav id="sidebar">
+        <div class="sidebar-header">
+            <p>대원CTS<br>STYLE GUIDE</p>
+            <button type="button" class="sidebarCollapse d-md-none">
+                <i class="bi bi-x"></i>
+            </button>
+        </div>
+
+        <ul class="list-unstyled components">
+            <!-- https://bootstrapious.com/p/bootstrap-sidebar -->
+            <li>
+                <a href="typography.html">Typography</a>
+            </li>
+            <li>
+                <a href="element.html">Element</a>
+            </li>
+            <li>
+                <a href="form.html">Form</a>
+            </li>
+            <li>
+                <a href="board.html">Board</a>
+            </li>
+            <li class="active">
+                <a href="slider.html">Slider</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="contents">
+        <button type="button" class="btn btn-secondary sidebarCollapse mt-4"><i class="bi bi-list"></i> 메뉴 Toggle</button>
+        <h2>slider 1</h2>
+        <div class="box_figure" style="width: 100%;">
+            <div class="swiper-container">
+
+                <!-- swiper slides -->
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="background-image: url(https://source.unsplash.com/random?sig=24);">
+                        <h2>SIMPLE SWIPER</h2>
+                    </div>
+
+                    <div class="swiper-slide" style="background-image: url(https://source.unsplash.com/random?sig=53);">
+                        <h2>HELLO WORLD</h2>
+                    </div>
+
+                    <div class="swiper-slide" style="background-image: url(https://source.unsplash.com/random?sig=52);">
+                        <h2>Random Text 1</h2>
+                    </div>
+
+                    <div class="swiper-slide" style="background-image: url(https://source.unsplash.com/random?sig=21);">
+                        <h2>Random Text 2</h2>
+                    </div>
+
+                    <div class="swiper-slide" style="background-image: url(https://source.unsplash.com/random?sig=53);">
+                        <h2>Random Text 3</h2>
+                    </div>
+                </div>
+                <!-- !swiper slides -->
+
+                <!-- next / prev arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <!-- !next / prev arrows -->
+
+                <!-- pagination dots -->
+                <div class="swiper-pagination"></div>
+                <!-- !pagination dots -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+  var Swipes = new Swiper('.swiper-container', {
+    loop: true,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable : true,
+    },
+  });
+</script>
+<script src="../js/common.js"></script>
+</body>
+</html>

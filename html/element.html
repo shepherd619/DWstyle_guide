@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>대원CTS 스타일가이드</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="../bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/guide.css">
+    <script src="../dist/jquery-3.6.0.min.js"></script>
+    <script src="../bootstrap/dist/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+</head>
+<body>
+<div class="style_guide wrapper">
+    <!-- Sidebar  -->
+    <nav id="sidebar">
+        <div class="sidebar-header">
+            <p>대원CTS<br>STYLE GUIDE</p>
+            <button type="button" class="sidebarCollapse d-md-none">
+                <i class="bi bi-x"></i>
+            </button>
+        </div>
+
+        <ul class="list-unstyled components">
+            <!-- https://bootstrapious.com/p/bootstrap-sidebar -->
+            <li>
+                <a href="typography.html">Typography</a>
+            </li>
+            <li class="active">
+                <a href="element.html">Element</a>
+            </li>
+            <li>
+                <a href="form.html">Form</a>
+            </li>
+            <li>
+                <a href="board.html">Board</a>
+            </li>
+            <li>
+                <a href="slider.html">Slider</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="contents">
+        <button type="button" class="btn btn-secondary sidebarCollapse mt-4"><i class="bi bi-list"></i> 메뉴 Toggle</button>
+
+        <h2>BreadCrumbs</h2>
+        <div class="box_figure">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#"><i class="bi bi-house-door-fill"></i></a></li>
+                    <li class="breadcrumb-item"><a href="#">회사소개</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">CEO 인사말</li>
+                </ol>
+            </nav>
+        </div>
+
+        <h2>Modal</h2>
+        <div class="box_figure">
+            <!-- 버튼 -->
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">배너 모달</button>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal2">텍스트 모달</button>
+
+
+            <!-- Modal banner -->
+            <div class="modal banner fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-body p-0">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <i class="bi bi-x"></i>
+                            </button>
+                            <img src="https://image.computer.co.kr/client/data/event/210308_pu.png" alt="">
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck1">
+                            <label class="custom-control-label" for="customCheck1">오늘 하루 보지 않기</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header align-items-center">
+                            <h5 class="modal-title" id="exampleModalLabel2">안내</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <i class="bi bi-x"></i>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            게시글을 수정하시겠습니까?
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">취소</button>
+                            <button type="button" class="btn btn-primary">수정</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2>tab 01</h2>
+        <div class="box_figure">
+            <div class="tab-wrap js-tab-wrap tab-style01">
+                <ul class="tab-list js-tab-list">
+                    <li>
+                        <button class="btn-tab js-btn-tab">CEO인사말</button>
+                    </li>
+                    <li>
+                        <button class="btn-tab js-btn-tab">개요 및 연혁</button>
+                    </li>
+                    <li>
+                        <button class="btn-tab js-btn-tab">기업 문화</button>
+                    </li>
+                    <li>
+                        <button class="btn-tab js-btn-tab">CI 소개</button>
+                    </li>
+                </ul>
+                <div class="js-tab-cont tab-cont">
+                    <h5 class="text-primary">대한민국 IT 유통 전문기업으로서의 역할을 다하도록 노력하겠습니다.</h5>
+                    <p>
+                        오프라인에서 뿐만 아니라 온라인에서도 파트너와 대원CTS가 더욱 빠르고 편리하게 소통할 수 있도록 컴퓨터코리아 플랫폼을 완성하였습니다.<br>
+                        대원CTS는 파트너와 호흡하며 이해하는 대한민국 IT유통을 선도하는 전문가 기업이 되겠습니다.
+                    </p>
+                </div>
+                <div class="js-tab-cont tab-cont">
+                    <h5 class="text-primary">2 대한민국 IT 유통 전문기업으로서의 역할을 다하도록 노력하겠습니다.</h5>
+                    <p>
+                        오프라인에서 뿐만 아니라 온라인에서도 파트너와 대원CTS가 더욱 빠르고 편리하게 소통할 수 있도록 컴퓨터코리아 플랫폼을 완성하였습니다.<br>
+                        대원CTS는 파트너와 호흡하며 이해하는 대한민국 IT유통을 선도하는 전문가 기업이 되겠습니다.
+                    </p>
+                </div>
+                <div class="js-tab-cont tab-cont">
+                    <h5 class="text-primary">3 대한민국 IT 유통 전문기업으로서의 역할을 다하도록 노력하겠습니다.</h5>
+                    <p>
+                        오프라인에서 뿐만 아니라 온라인에서도 파트너와 대원CTS가 더욱 빠르고 편리하게 소통할 수 있도록 컴퓨터코리아 플랫폼을 완성하였습니다.<br>
+                        대원CTS는 파트너와 호흡하며 이해하는 대한민국 IT유통을 선도하는 전문가 기업이 되겠습니다.
+                    </p>
+                </div>
+                <div class="js-tab-cont tab-cont">
+                    <h5 class="text-primary">4 대한민국 IT 유통 전문기업으로서의 역할을 다하도록 노력하겠습니다.</h5>
+                    <p>
+                        오프라인에서 뿐만 아니라 온라인에서도 파트너와 대원CTS가 더욱 빠르고 편리하게 소통할 수 있도록 컴퓨터코리아 플랫폼을 완성하였습니다.<br>
+                        대원CTS는 파트너와 호흡하며 이해하는 대한민국 IT유통을 선도하는 전문가 기업이 되겠습니다.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <h2>tab 02</h2>
+        <div class="box_figure">
+            <div class="tab-wrap js-tab-wrap tab-style02">
+                <ul class="tab-list js-tab-list">
+                    <li>
+                        <button class="btn-tab js-btn-tab">
+                            <i class="bi bi-brush"></i>
+                            CEO인사말
+                        </button>
+                    </li>
+                    <li>
+                        <button class="btn-tab js-btn-tab">
+                            <i class="bi bi-diagram-3"></i>
+                            조직도
+                        </button>
+                    </li>
+                    <li>
+                        <button class="btn-tab js-btn-tab">
+                            <i class="bi bi-building"></i>
+                            오시는길
+                        </button>
+                    </li>
+                    <li>
+                        <button class="btn-tab js-btn-tab">
+                            <i class="bi bi-award"></i>
+                            수상내역
+                        </button>
+                    </li>
+                </ul>
+                <div class="js-tab-cont tab-cont">
+                    <h5 class="text-primary">대한민국 IT 유통 전문기업으로서의 역할을 다하도록 노력하겠습니다.</h5>
+                    <p>
+                        오프라인에서 뿐만 아니라 온라인에서도 파트너와 대원CTS가 더욱 빠르고 편리하게 소통할 수 있도록 컴퓨터코리아 플랫폼을 완성하였습니다.<br>
+                        대원CTS는 파트너와 호흡하며 이해하는 대한민국 IT유통을 선도하는 전문가 기업이 되겠습니다.
+                    </p>
+                </div>
+                <div class="js-tab-cont tab-cont">
+                    <h5 class="text-primary">2 대한민국 IT 유통 전문기업으로서의 역할을 다하도록 노력하겠습니다.</h5>
+                    <p>
+                        오프라인에서 뿐만 아니라 온라인에서도 파트너와 대원CTS가 더욱 빠르고 편리하게 소통할 수 있도록 컴퓨터코리아 플랫폼을 완성하였습니다.<br>
+                        대원CTS는 파트너와 호흡하며 이해하는 대한민국 IT유통을 선도하는 전문가 기업이 되겠습니다.
+                    </p>
+                </div>
+                <div class="js-tab-cont tab-cont">
+                    <h5 class="text-primary">3 대한민국 IT 유통 전문기업으로서의 역할을 다하도록 노력하겠습니다.</h5>
+                    <p>
+                        오프라인에서 뿐만 아니라 온라인에서도 파트너와 대원CTS가 더욱 빠르고 편리하게 소통할 수 있도록 컴퓨터코리아 플랫폼을 완성하였습니다.<br>
+                        대원CTS는 파트너와 호흡하며 이해하는 대한민국 IT유통을 선도하는 전문가 기업이 되겠습니다.
+                    </p>
+                </div>
+                <div class="js-tab-cont tab-cont">
+                    <h5 class="text-primary">4 대한민국 IT 유통 전문기업으로서의 역할을 다하도록 노력하겠습니다.</h5>
+                    <p>
+                        오프라인에서 뿐만 아니라 온라인에서도 파트너와 대원CTS가 더욱 빠르고 편리하게 소통할 수 있도록 컴퓨터코리아 플랫폼을 완성하였습니다.<br>
+                        대원CTS는 파트너와 호흡하며 이해하는 대한민국 IT유통을 선도하는 전문가 기업이 되겠습니다.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <h2>accordion</h2>
+        <div class="box_figure">
+            <div class="accordion" id="accordionExample">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            [Jabra] 초기화 방법 문의
+                            <i class="bi bi-plus"></i>
+                            <i class="bi bi-dash"></i>
+                        </button>
+                    </div>
+
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                        <div class="card-body">
+                            초기화방법입니다.<br>
+                            Ex) Elite Active 65t 기준<br>
+                            1. 우측 이어버드 전원을 킵니다.<br>
+                            (적색 불빛은 전원이 꺼짐을 의미합니다. 적색 불빛을 확인 후, 전원을 다시 켜주시기 바랍니다.<br>
+                            2. 이어버드 LED가 녹색 -> 파란색 -> 보라색으로 나올 때 까지 버튼을 계속 누릅니다. (약 10초)<br>
+                            3. 버튼에서 손을 떼고 파란 불빛이 나오면 스마트폰에 블루투스를 활성화하여 연결해주세요.<br>
+                            4. 좌측 이어버드는 좌측 볼륨버튼으로 다시 켜주시길 바랍니다.<br><br>
+
+                            세부 사항은 아래 링크로 들어가신 후,<br>
+                            사용하고 계시는 제품과 스마트폰 선택하시면 페어링 방법 상세히 나옵니다.<br>
+                            참고 부탁드립니다.<br>
+                            https://www.youtube.com/watch?v=iAVhMg6h6a8&t=45s<br>
+                            감사합니다.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingTwo">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            [하드디스크] 내장 하드를 구매했는데 인식이 안돼요.
+                            <i class="bi bi-plus"></i>
+                            <i class="bi bi-dash"></i>
+                        </button>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                        <div class="card-body">
+                            Ex) Elite Active 65t 기준<br>
+                            좌측 이어버드 단독 사용은 불가 합니다.<br>
+                            우측 이어버드 단독 사용가능하나 충전단자에서 꺼낼시 우측이어버드만 꺼내서 사용부탁드립니다.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingThree">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            [외장하드] TV 에서 인식이 안되는데요?
+                            <i class="bi bi-plus"></i>
+                            <i class="bi bi-dash"></i>
+                        </button>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                        <div class="card-body">
+                            2017년 현재 출시되는 모든 WD 외장하드는 GPT 파티션으로 포멧되어 있습니다.<br>
+
+                            스마트 TV 의 경우 GPT 를 대부분 지원하지 않습니다. (일부 최신 TV 호환 가능)<br>
+
+                            TV 에서 사용하시려면, windows 7 이상인 컴퓨터에서 인식되는지 확인 하신 후<br>
+
+                            파티션을 MBR 로 변경하시면 됩니다.<br>
+
+                            변경방법은  대원CTS 홈페이지 [ 기술지원 -> 통합 자료실 -> MBR 포멧방법 ] 참고바랍니다.<br>
+
+                            단, 이 작업을 하시면 외장하드의 모든 data는 삭제되는 점 유의 바랍니다.<br>
+
+                            MBR 변경하면 2TB 까지만 인식이 됩니다. 그 이상의 용량은 사용할 수 없는점 유의바랍니다.<br>
+
+                            TV는 외장하드 사용시 안전제거가 되지 않으므로 제거시 유의 바랍니다.<br>
+
+                            외장하드 고장의 원인이 될 수 있습니다.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2></h2>
+        <div class="box_figure">
+
+        </div>
+
+    </div>
+</div>
+
+<script src="../js/common.js"></script>
+</body>
+</html>

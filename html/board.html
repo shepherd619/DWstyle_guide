@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>대원CTS 스타일가이드</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="../bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/guide.css">
+    <script src="../dist/jquery-3.6.0.min.js"></script>
+    <script src="../bootstrap/dist/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+</head>
+<body>
+<div class="style_guide wrapper">
+    <!-- Sidebar  -->
+    <nav id="sidebar">
+        <div class="sidebar-header">
+            <p>대원CTS<br>STYLE GUIDE</p>
+            <button type="button" class="sidebarCollapse d-md-none">
+                <i class="bi bi-x"></i>
+            </button>
+        </div>
+
+        <ul class="list-unstyled components">
+            <!-- https://bootstrapious.com/p/bootstrap-sidebar -->
+            <li>
+                <a href="typography.html">Typography</a>
+            </li>
+            <li>
+                <a href="element.html">Element</a>
+            </li>
+            <li>
+                <a href="form.html">Form</a>
+            </li>
+            <li class="active">
+                <a href="board.html">Board</a>
+            </li>
+            <li>
+                <a href="slider.html">Slider</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="contents">
+        <button type="button" class="btn btn-secondary sidebarCollapse mt-4"><i class="bi bi-list"></i> 메뉴 Toggle</button>
+
+        <h2>List</h2>
+        <div class="box_figure white">
+            <table class="table dw-board">
+                <thead>
+                <tr>
+                    <th class="number" scope="col">번호</th>
+                    <th class="title" scope="col">제목</th>
+                    <th class="name" scope="col">작성자</th>
+                    <th class="date" scope="col">작성일자</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th class="number" scope="row">1</th>
+                    <td class="title"><a href="#">[지마켓,옥션]  ASUS 노트북 런칭특가 이벤트 (기간 : 2021.02.01~02.14)</a></td>
+                    <td class="name">Otto</td>
+                    <td class="date">2020-06-20</td>
+                </tr>
+                <tr>
+                    <th class="number" scope="row">2</th>
+                    <td class="title"><a href="#">[11번가 LG전자 브랜드위크] 울트라기어 게이밍모니터 32GK650F 15%추가 쿠폰 할인행사(기간 : 2020.09.14 ~ 09.20)</a></td>
+                    <td class="name">Thornton</td>
+                    <td class="date">2020-09-20</td>
+                </tr>
+                <tr>
+                    <th class="number" scope="row">3</th>
+                    <td class="title"><a href="#">컴퓨터코리아 7주년 고객감사 이벤트  (기간  20.06.01-06.30)</a></td>
+                    <td class="name">the Bird</td>
+                    <td class="date">2020-12-20</td>
+                </tr>
+                </tbody>
+            </table>
+
+            <nav class="mt-5">
+                <ul class="pagination  justify-content-center">
+                    <li class="page-item disabled"><a class="page-link" href="#">«</a></li>
+                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">»</a></li>
+                </ul>
+            </nav>
+
+            <form class="form-inline dw-board-search mt-5">
+                <div class="form-group">
+                    <select class="form-control mr-2" id="exampleFormControlSelect1">
+                        <option>제목+내용</option>
+                        <option>제목</option>
+                        <option>내용</option>
+                    </select>
+                    <input type="text" class="form-control mr-2" id="search">
+                    <button type="submit" class="btn btn-secondary">검색</button>
+                </div>
+            </form>
+        </div>
+
+        <h2>View</h2>
+        <div class="box_figure white">
+<!--            <table class="table dw-board-view">-->
+<!--                <tbody>-->
+<!--                <tr>-->
+<!--                    <th scope="col">제목</th>-->
+<!--                    <td>[11번가 LG전자 브랜드위크] 울트라기어 게이밍모니터 32GK650F 15%추가 쿠폰 할인행사(기간 : 2020.09.14 ~ 09.20)</td>-->
+<!--                </tr>-->
+<!--                <tr>-->
+<!--                    <th scope="col">작성자</th>-->
+<!--                    <td></td>-->
+<!--                </tr>-->
+<!--                <tr>-->
+<!--                    <th scope="col">작성일자</th>-->
+<!--                    <td></td>-->
+<!--                </tr>-->
+<!--                <tr>-->
+<!--                    <td>-->
+<!--                        -->
+<!--                    </td>-->
+<!--                </tr>-->
+<!--                </tbody>-->
+<!--            </table>-->
+            <div class="dw-board-view">
+                <div class="view-item">
+                    <h2 class="head">제목</h2>
+                    <div class="cont">33년 IT유통 외길, '상생 전도사' 정명천 대표 "지속가능 매출 1조 기업 완성"</div>
+                </div>
+                <div class="view-item">
+                    <div class="head">작성자</div>
+                    <div class="cont">이영철</div>
+                </div>
+                <div class="view-item">
+                    <div class="head">작성일자</div>
+                    <div class="cont">2019.05.05</div>
+                </div>
+                <div class="view-item view_description">
+                    <img src="https://image.zdnet.co.kr/2021/01/29/b6411665187fa9e6630db5bb8fd9339d.jpg" alt="">
+                    33년 IT유통 외길, '상생 전도사' 정명천 대표 "지속가능 매출 1조 기업 완성"<br>
+                    인터뷰 정명천 대원씨티에스 대표<br><br>
+
+                    정명천 대원씨티에스 대표(사진=지디넷코리아 유회현 기자)<br><br>
+
+                    1988년 창업 이후 IT산업의 부침 속에 쉼 없이 달려온 정명천(61) 대원씨티에스 대표. <br>
+                    그는 국내 IT종합 유통산업의 산 증인이자 인터넷·정보화 산업 성장기를 밑바닥부터 온 몸으로 부딪혀 온 기업인이다.<br><br>
+
+                    그는 당시 대원컴퓨터 창립과 함께 삼보컴퓨터, 삼성전자 총판 계약을 시작으로 HP, 에이수스, 마이크로소프트(MS)를 비롯해 웨스턴디지털, AMD 등과 파트너십 계약을 맺으면서 회사를 연매출 1조원(작년 기준 9천200억원)에 달하는 IT 종합유통 기업으로 일궜다.<br><br>
+
+                    성공 비결을 묻는 질문에 정 대표는 "당시 운도 좋았고, 초기 어려움을 수월하게 넘겼다"고 웃어넘긴다.<br><br>
+
+                    그러나 1990년대 인터넷 정보화 시대 컴퓨터 산업사에서 흥망성쇠를 겪은 기업은 부지기수다. 대표적인 업체가 바로 세진컴퓨터랜드. 세진은 전국 57개의 직영매장을 확보하고 창업 4년만인 1996년, 삼성전자와 삼보컴퓨터에 이은 국내 3위 컴퓨터 기업으로 성장하기도 했다. 그러나 공격적이고 방만한 경영으로 역사 속으로 사라졌다.<br><br>
+
+                    정 대표가 남모를 숱한 위기와 어려움을 뚫고 이 자리까지 오게 된 가장 큰 원동력은 바로 '함께 성장하는 비즈니스 파트너'가 되겠다는 상생 경영이다. <br>
+                    파트너십은 정 대표에게 가장 소중한 자산이자 IT 유통 생태계를 개척한 에너지원이다. <br>
+                    그런 만큼 그의 산업을 바라보는 안목과 식견이 넓고 깊다. 지금도 고객과 파트너사와의 상생을 위해 부단히 골몰한다. <br>
+                    그래서 올해 공동 프랜차이드 사업 등 신규 사업 아이템도 구상 중이다.<br><br>
+
+                    정 대표는 “그래도 많은 시행착오가 있었고, 지금까지 회사가 존재하는 것은 나의 이익보다는 공동체의 이익을 먼저 생각해왔고, 파트너와의 관계도 단기적인 이익이 아니라, 신뢰를 바탕으로 한 장기적인 상생을 중요히 해왔기 때문이라고 생각한다"고 강조했다.<br>
+                </div>
+                <div class="view-item">
+                    <div class="head">첨부파일</div>
+                    <div class="cont">
+                        <a href="#">기사자료.pdf<i class="bi bi-download"></i></a>
+                    </div>
+                </div>
+                <div class="btns-wrap mt-5 d-flex justify-content-between">
+                    <button type="button" class="btn btn-outline-secondary"><i class="bi bi-chevron-compact-left"></i>이전글</button>
+                    <button type="button" class="btn btn-secondary"><i class="bi bi-card-list"></i>목록</button>
+                    <button type="button" class="btn btn-outline-secondary disabled">다음글<i class="bi bi-chevron-compact-right"></i></button>
+                </div>
+
+                <div class="mt-5 d-flex justify-content-center">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-outline-secondary"><i class="bi bi-chevron-compact-left"></i>이전글</button>
+                        <button type="button" class="btn btn-secondary pr-3 pl-3">목록</button>
+                        <button type="button" class="btn btn-outline-secondary disabled">다음글<i class="bi bi-chevron-compact-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2>Write</h2>
+        <div class="box_figure white">
+            <div class="dw-board-write">
+                글작성 화면
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="../js/common.js"></script>
+</body>
+</html>

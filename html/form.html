@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>대원CTS 스타일가이드</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="../bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/guide.css">
+    <script src="../dist/jquery-3.6.0.min.js"></script>
+    <script src="../bootstrap/dist/js/bootstrap.bundle.js"></script>
+</head>
+<body>
+<div class="style_guide wrapper">
+    <!-- Sidebar  -->
+    <nav id="sidebar">
+        <div class="sidebar-header">
+            <p>대원CTS<br>STYLE GUIDE</p>
+            <button type="button" class="sidebarCollapse d-md-none">
+                <i class="bi bi-x"></i>
+            </button>
+        </div>
+
+        <ul class="list-unstyled components">
+            <!-- https://bootstrapious.com/p/bootstrap-sidebar -->
+            <li>
+                <a href="typography.html">Typography</a>
+            </li>
+            <li>
+                <a href="element.html">Element</a>
+            </li>
+            <li class="active">
+                <a href="form.html">Form</a>
+            </li>
+            <li>
+                <a href="board.html">Board</a>
+            </li>
+            <li>
+                <a href="slider.html">Slider</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="contents">
+        <button type="button" class="btn btn-secondary sidebarCollapse mt-4"><i class="bi bi-list"></i> 메뉴 Toggle</button>
+
+        <h2>input text</h2>
+        <div class="box_figure">
+            <form>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">이메일</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <small id="emailHelp" class="form-text text-muted">이메일 양식에 맞추어 적어주세요.</small>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">비밀번호</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+            </form>
+        </div>
+
+        <h2>input radio</h2>
+        <div class="box_figure">
+            <div class="custom-control custom-radio">
+                <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                <label class="custom-control-label" for="customRadio1">선택1</label>
+            </div>
+            <div class="custom-control custom-radio">
+                <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                <label class="custom-control-label" for="customRadio2">선택2</label>
+            </div>
+            <div class="custom-control custom-radio">
+                <input type="radio" id="customRadio3" name="customRadio" class="custom-control-input" disabled>
+                <label class="custom-control-label" for="customRadio3">선택3</label>
+            </div>
+        </div>
+
+        <h2>input checkbox</h2>
+        <div class="box_figure">
+            <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="customCheck1" >
+                <label class="custom-control-label" for="customCheck1">하루 보지 않기</label>
+            </div>
+            <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="customCheckDisabled1" disabled>
+                <label class="custom-control-label" for="customCheckDisabled1">하루 보지 않기</label>
+            </div>
+        </div>
+
+        <h2>switches</h2>
+        <div class="box-figure">
+            <div class="custom-control custom-switch">
+                <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                <label class="custom-control-label" for="customSwitch1">알림 받기</label>
+            </div>
+            <div class="custom-control custom-switch">
+                <input type="checkbox" class="custom-control-input" disabled id="customSwitch2">
+                <label class="custom-control-label" for="customSwitch2">알림 받기</label>
+            </div>
+        </div>
+
+        <h2>custom input file</h2>
+        <div class="box_figure">
+            <div class="custom-file">
+                <input type="file" class="custom-file-input" id="customFile">
+                <label class="custom-file-label" for="customFile">파일 선택</label>
+            </div>
+        </div>
+
+        <h2>button</h2>
+        <div class="box_figure">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                    <button type="button" class="btn btn-primary">Primary</button>
+                    <button type="button" class="btn btn-secondary">Secondary</button>
+                    <button type="button" class="btn btn-success">Success</button>
+                    <button type="button" class="btn btn-danger">Danger</button>
+                    <button type="button" class="btn btn-warning">Warning</button>
+                    <button type="button" class="btn btn-info">Info</button>
+                    <button type="button" class="btn btn-dark">Dark</button>
+                    <button type="button" class="btn btn-link">Link</button>
+                </li>
+                <li class="list-group-item">
+                    <button type="button" class="btn btn-outline-primary">Primary</button>
+                    <button type="button" class="btn btn-outline-secondary">Secondary</button>
+                    <button type="button" class="btn btn-outline-success">Success</button>
+                    <button type="button" class="btn btn-outline-danger">Danger</button>
+                    <button type="button" class="btn btn-outline-warning">Warning</button>
+                    <button type="button" class="btn btn-outline-info">Info</button>
+                    <button type="button" class="btn btn-outline-dark">Dark</button>
+                </li>
+                <li class="list-group-item">
+                    <button type="button" class="btn btn-primary btn-lg">Large button</button>
+                    <button type="button" class="btn btn-secondary btn-lg">Large button</button>
+                </li>
+                <li class="list-group-item">
+                    <button type="button" class="btn btn-primary btn-sm">Small button</button>
+                    <button type="button" class="btn btn-secondary btn-sm">Small button</button>
+                </li>
+                <li class="list-group-item">
+                    <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
+                    <button type="button" class="btn btn-secondary btn-lg btn-block">Block level button</button>
+                </li>
+                <li class="list-group-item">
+
+                </li>
+            </ul>
+        </div>
+
+        <h2>dropdowns</h2>
+        <div class="box_figure">
+            <div class="dropdown mb-3">
+                <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Dropdown button
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </div>
+
+            <div class="btn-group">
+                <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Small button
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </div>
+        </div>
+
+        <h2>form grid</h2>
+        <div class="box_figure">
+            <form>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputEmail4">이메일</label>
+                        <input type="email" class="form-control" id="inputEmail4">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputPassword4">비밀번호</label>
+                        <input type="password" class="form-control" id="inputPassword4">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputAddress">주소</label>
+                    <input type="text" class="form-control" id="inputAddress" placeholder="시, 군, 구">
+                </div>
+                <div class="form-group">
+                    <label for="inputAddress2">상세주소</label>
+                    <input type="text" class="form-control" id="inputAddress2" placeholder="동, 호">
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label for="inputState">옵션</label>
+                        <select id="inputState" class="form-control">
+                            <option selected>선택해주세요</option>
+                            <option>옵션1</option>
+                            <option>옵션2</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-8">
+                        <label for="inputZip">기타</label>
+                        <input type="text" class="form-control" id="inputZip">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck5" >
+                        <label class="custom-control-label" for="customCheck5">내용을 숙지하였습니다</label>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary">저장</button>
+            </form>
+        </div>
+    </div>
+</div>
+<script src="../js/common.js"></script>
+</body>
+</html>
