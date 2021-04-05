@@ -5,17 +5,97 @@
     <title>대원CTS 스타일가이드</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/guide.css">
+    <script src="dist/jquery-3.6.0.min.js"></script>
     <script src="bootstrap/dist/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
 </head>
 <body>
-<div class="style_guide">
-    <div class="list-group">
-        <a href="html/typography.html" class="list-group-item list-group-item-action">Typography</a>
-        <a href="html/element.html" class="list-group-item list-group-item-action">Element</a>
-        <a href="html/form.html" class="list-group-item list-group-item-action">Form</a>
-        <a href="html/board.html" class="list-group-item list-group-item-action">Board</a>
+<div class="style_guide wrapper">
+    <!-- Sidebar  -->
+    <nav id="sidebar">
+        <div class="sidebar-header">
+            <p>대원CTS<br>STYLE GUIDE</p>
+            <button type="button" class="sidebarCollapse d-md-none">
+                <i class="bi bi-x"></i>
+            </button>
+        </div>
+
+        <ul class="list-unstyled components">
+            <!-- https://bootstrapious.com/p/bootstrap-sidebar -->
+            <li class="active">
+                <a href="typography.html">Typography</a>
+            </li>
+            <li>
+                <a href="element.html">Element</a>
+            </li>
+            <li>
+                <a href="form.html">Form</a>
+            </li>
+            <li>
+                <a href="board.html">Board</a>
+            </li>
+            <li>
+                <a href="slider.html">Slider</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="contents">
+        <button type="button" class="btn btn-secondary sidebarCollapse mt-4"><i class="bi bi-list"></i> 메뉴 Toggle</button>
+
+        <h2>Heading</h2>
+        <div class="box_figure">
+            <h1>제목 스타일 1<small class="text-muted"> (H1)</small></h1>
+            <h2>제목 스타일 2<small class="text-muted"> (H2)</small></h2>
+            <h3>제목 스타일 3<small class="text-muted"> (H3)</small></h3>
+            <h4>제목 스타일 4<small class="text-muted"> (H4)</small></h4>
+            <h5>제목 스타일 5<small class="text-muted"> (H5)</small></h5>
+            <h6>제목 스타일 6<small class="text-muted"> (H6)</small></h6>
+        </div>
+
+        <h2>emphasis</h2>
+        <div class="box_figure">
+            <p>기본 텍스트 입니다.</p>
+            <p><a href="#">링크텍스트</a> 입니다. 링크는 호버됩니다.</p>
+
+            <p><mark>하이라이팅</mark> 텍스트 입니다.</p>
+            <p><s>취소선 텍스트 입니다.</s></p>
+            <p><u>밑줄 텍스트 입니다.</u></p>
+            <p><small>작은 텍스트 입니다.</small></p>
+            <p><strong>강조 텍스트 입니다.</strong></p>
+            <p><em>기울임 텍스트 입니다.</em></p>
+        </div>
+
+        <h2>color</h2>
+        <div class="box_figure">
+            <p class="text-muted">함께 성장하는 비즈니스 파트너가 되겠습니다.</p>
+            <p class="text-secondary">함께 성장하는 비즈니스 파트너가 되겠습니다.</p>
+            <p class="text-primary">함께 성장하는 비즈니스 파트너가 되겠습니다.</p>
+            <p class="text-warning">함께 성장하는 비즈니스 파트너가 되겠습니다.</p>
+            <p class="text-danger">함께 성장하는 비즈니스 파트너가 되겠습니다.</p>
+            <p class="text-success">함께 성장하는 비즈니스 파트너가 되겠습니다.</p>
+            <p class="text-info">함께 성장하는 비즈니스 파트너가 되겠습니다.</p>
+        </div>
+
+        <h2>Blockquotes</h2>
+        <div class="box_figure">
+            <blockquote class="blockquote">
+                <p>하루 하루가 다르게 변해가는 경영 환경은, <br>잠깐의 안주도 허락되지 않는 치열한 전쟁과 같습니다.</p>
+                <footer class="blockquote-footer"> 대원CTS<cite title="Source Title"> 정명천</cite></footer>
+            </blockquote>
+        </div>
+
+        <h2></h2>
+        <div class="box_figure">
+            공백
+        </div>
+
     </div>
 </div>
+
+<script src="../js/common.js"></script>
 </body>
 </html>
