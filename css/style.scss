@@ -448,3 +448,22 @@
     margin-bottom: 1rem;
   }
 }
+/* IE10+ */ @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .flipbox {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    transform-style: preserve-3d;
+    perspective: 1200px;
+    color: #fff;
+    &:hover .flipbox-wrap {
+      transform: none;
+      .flipbox-front {
+        opacity: 0;
+      }
+      .flipbox-back {
+        transform : none;
+      }
+    }
+  }
+}

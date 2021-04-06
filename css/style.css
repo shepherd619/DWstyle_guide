@@ -343,5 +343,20 @@
 @media (max-width: 991px) {
   .flipbox {
     margin-bottom: 1rem; } }
+/* IE10+ */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .flipbox {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    transform-style: preserve-3d;
+    perspective: 1200px;
+    color: #fff; }
+    .flipbox:hover .flipbox-wrap {
+      transform: none; }
+      .flipbox:hover .flipbox-wrap .flipbox-front {
+        opacity: 0; }
+      .flipbox:hover .flipbox-wrap .flipbox-back {
+        transform: none; } }
 
 /*# sourceMappingURL=style.css.map */
