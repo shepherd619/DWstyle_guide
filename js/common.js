@@ -28,3 +28,22 @@ $('.custom-file-input').on('change', function() {
 $('.sidebarCollapse').on('click', function () {
   $('#sidebar').toggleClass('active');
 });
+
+
+var mql = window.matchMedia("screen and (max-width: 768px)");
+var isMobile = mql.matches;
+
+if(isMobile) {
+  $('#sidebar').toggleClass('active');
+}else {
+  // PC
+}
+
+mql.addListener(function(e) {
+  if(e.matches) {
+    // 768 이하로 넘어갈때
+    $('#sidebar').removeClass('active');
+  } else {
+    // 768 이상으로 넘어갈때
+  }
+});

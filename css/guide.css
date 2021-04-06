@@ -18,7 +18,7 @@ html, body, .wrapper {height: 100%;}
 .wrap_guide .thw{width:120px}
 .style_guide .header .copy{height:45px;line-height:45px;padding:0 20px;background:#1CA0D8;color:#fff;font-size:16px}
 .style_guide > .header > .title{height:80px;line-height:80px;padding:0 20px;border-bottom:#ccc 1px solid;color:#000;font-size:35px}
-.style_guide .contents{padding:0 5px; width: 100%; overflow-x: hidden;}
+.style_guide .contents{padding:5rem 5px; width: 100%; overflow-x: hidden;}
 .style_guide .contents > h2{margin:30px 10px 10px;/*border-bottom:#e2e2e2 1px solid;*/color:#000;font-size:22px;font-weight:normal}
 .style_guide .contents > h2:before{content:"■";display:inline-block;margin:7px 10px 0 0;color:#1CA0D8;font-size:12px;vertical-align:top}
 .style_guide .contents .pop_txt{margin:5px 0 20px}
@@ -33,7 +33,7 @@ html, body, .wrapper {height: 100%;}
   .wrap_guide .thw{width:300px}
   .style_guide .header .copy{padding:0 50px}
   .style_guide > .header > .title{height:100px;line-height:100px;padding:0 50px;font-size:40px}
-  .style_guide .contents{padding:0 100px}
+  .style_guide .contents{padding:5rem 100px}
   .style_guide .contents > h2{margin:45px 0 15px;font-size:25px}
   .style_guide .contents > h2:before{margin:8px 10px 0 0}
   .style_guide .contents .pop_txt{margin:0 0 20px}
