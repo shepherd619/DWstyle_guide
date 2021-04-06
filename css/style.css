@@ -240,12 +240,13 @@
 
 .swiper-button-container {
   background-color: rgba(0, 0, 0, 0.25); }
-.swiper-button-prev {
-  color: #fff;
-  font-size: 4vw; }
-.swiper-button-next {
-  color: #fff;
-  font-size: 4vw; }
+.swiper-button-prev, .swiper-button-next {
+  width: auto;
+  height: auto;
+  font-size: 4vw;
+  line-height: 1;
+  background: none;
+  color: #fff; }
 
 .swiper-slide:before {
   content: "";
