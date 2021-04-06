@@ -357,6 +357,8 @@
       .flipbox:hover .flipbox-wrap .flipbox-front {
         opacity: 0; }
       .flipbox:hover .flipbox-wrap .flipbox-back {
-        transform: none; } }
+        transform: none; }
+        .flipbox:hover .flipbox-wrap .flipbox-back p {
+          width: 100%; } }
 
 /*# sourceMappingURL=style.css.map */

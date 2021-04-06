@@ -463,6 +463,9 @@
       }
       .flipbox-back {
         transform : none;
+        p {
+          width: 100%;
+        }
       }
     }
   }
