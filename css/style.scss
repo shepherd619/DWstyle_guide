@@ -282,95 +282,6 @@
   }
 }
 
-
-/* 스와이퍼 */
-// external css https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.css
-.swiper-container.swiper-full {
-  width: 100%;
-  .swiper-slide {
-    position: relative;
-    background-size: cover;
-    background-position: 50%;
-    min-height: 60vh;
-    //display: flex;
-    //align-items: center;
-    //justify-content: center;
-    //flex-direction: column;
-  }
-
-  // overwrite swiper defaults
-  .swiper-pagination {
-    &-bullet {
-      background-color: transparent;
-      border: 2px solid #fff;
-      border-radius: 50%;
-      width: 12px;
-      height: 12px;
-      opacity: 1;
-    }
-
-    &-bullet-active {
-      background-color: #fff;
-    }
-  }
-
-  .swiper-button {
-    &-container {
-      background-color: rgba(0,0,0,.25);
-    }
-    &-prev, &-next {
-      width: auto;
-      height: auto;
-      font-size: 4vw;
-      line-height: 1;
-      background: none;
-      color: $white;
-    }
-  }
-
-  // GENERIC STUFF TO MAKE IT POP 💩
-  .swiper-slide {
-    &:before {
-      content: "";
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      background: black;
-      opacity: .4;
-    }
-    h2 {
-      position: absolute;
-      left: 0;
-      top: 50%;
-      width: 100%;
-      pointer-events: none;
-      opacity: 0;
-      color: #ffffff;
-      font-size: calc(5vw);
-      letter-spacing: -1px;
-      text-align: center;
-      //-ms-transform: translateY(-5%) scale(.8); /* IE 11 */
-      transform: translateY(-55%) scale(.8);
-      transition: 1s ease;
-      text-transform: uppercase;
-      text-shadow: 0 5px 5px rgba(0,0,0, .01);
-    }
-    &-active h2 {
-      opacity: 1;
-      //-ms-transform: translateY(0%) scale(1); /* IE 11 */
-      transform: translateY(-50%) scale(1);
-      transition: 1s ease;
-    }
-  }
-
-  .swiper-button-prev:after, .swiper-container-rtl .swiper-button-next:after,
-  .swiper-button-next:after, .swiper-container-rtl .swiper-button-prev:after {
-    display: none;
-  }
-}
-
 /* 협력사 플립 */
 .flipbox {
   position: relative;
@@ -468,5 +379,153 @@
         }
       }
     }
+  }
+}
+
+/* 스와이퍼 */
+// external css https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.css
+.swiper-container.swiper-full {
+  width: 100%;
+  .swiper-slide {
+    position: relative;
+    background-size: cover;
+    background-position: 50%;
+    min-height: 60vh;
+  }
+
+  // overwrite swiper defaults
+  .swiper-pagination {
+    &-bullet {
+      background-color: transparent;
+      border: 2px solid #fff;
+      border-radius: 50%;
+      width: 12px;
+      height: 12px;
+      opacity: 1;
+    }
+
+    &-bullet-active {
+      background-color: #fff;
+    }
+  }
+
+  .swiper-button {
+    &-container {
+      background-color: rgba(0,0,0,.25);
+    }
+    &-prev, &-next {
+      width: auto;
+      height: auto;
+      font-size: 4vw;
+      line-height: 1;
+      background: none;
+      color: $white;
+    }
+  }
+
+  // GENERIC STUFF TO MAKE IT POP 💩
+  .swiper-slide {
+    &:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: black;
+      opacity: .4;
+    }
+    h2 {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      width: 100%;
+      pointer-events: none;
+      opacity: 0;
+      color: #ffffff;
+      font-size: calc(5vw);
+      letter-spacing: -1px;
+      text-align: center;
+      //-ms-transform: translateY(-5%) scale(.8); /* IE 11 */
+      transform: translateY(-55%) scale(.8);
+      transition: 1s ease;
+      text-transform: uppercase;
+      text-shadow: 0 5px 5px rgba(0,0,0, .01);
+    }
+    &-active h2 {
+      opacity: 1;
+      //-ms-transform: translateY(0%) scale(1); /* IE 11 */
+      transform: translateY(-50%) scale(1);
+      transition: 1s ease;
+    }
+  }
+}
+
+
+/* 상품 스와이퍼 */
+.swiper-per-wrap {
+  .swiper-btns {
+    overflow: hidden;
+  }
+  .swiper-button-prev, .swiper-button-next {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: static;
+    width: auto;
+    height: auto;
+    margin: 0 0 1rem;
+    padding: .375rem .7rem;
+    background-image: none;
+  }
+  .swiper-button-next {
+    margin-left: -1px;
+  }
+  .swiper-button-prev.swiper-button-disabled,
+  .swiper-button-next.swiper-button-disabled {
+    opacity: 1;
+    color: lighten(#343a40, 50);
+  }
+  .swiper-pagination {
+    position: static;
+  }
+  .swiper-pagination-bullet {
+    width: 1rem;
+    height: 1rem;
+    & + .swiper-pagination-bullet {
+      margin-left: 1rem;
+    }
+  }
+  .swiper-pagination-bullet-active {
+    background-color: $blue;
+  }
+
+  .item-wrap {
+    position: relative;
+    display: block;
+    &:hover {
+      .item-hover {
+        opacity: 1;
+      }
+    }
+  }
+  // 호버
+  .item-hover {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 10%;
+    opacity: 0;
+    transition: opacity ease-in-out .3s;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: $white;
+    word-break: keep-all;
+    font-weight: 400;
+    text-align: center;
   }
 }

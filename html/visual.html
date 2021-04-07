@@ -142,24 +142,17 @@
 
                 <!-- swiper slides -->
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide" style="background-image: url(https://source.unsplash.com/random?sig=24);">
+                    <!-- https://source.unsplash.com/random?sig=24/800x600 -->
+                    <div class="swiper-slide" style="background-image: url(https://images.unsplash.com/photo-1617173812209-8cbdc839f673?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max);">
                         <h2>SIMPLE SWIPER</h2>
                     </div>
 
-                    <div class="swiper-slide" style="background-image: url(https://source.unsplash.com/random?sig=53);">
+                    <div class="swiper-slide" style="background-image: url(https://images.unsplash.com/photo-1615803795991-80ce0f7c4770?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max);">
                         <h2>HELLO WORLD</h2>
                     </div>
 
-                    <div class="swiper-slide" style="background-image: url(https://source.unsplash.com/random?sig=52);">
+                    <div class="swiper-slide" style="background-image: url(https://images.unsplash.com/photo-1615714365623-e703a1c66c88?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max);">
                         <h2>Random Text 1</h2>
-                    </div>
-
-                    <div class="swiper-slide" style="background-image: url(https://source.unsplash.com/random?sig=21);">
-                        <h2>Random Text 2</h2>
-                    </div>
-
-                    <div class="swiper-slide" style="background-image: url(https://source.unsplash.com/random?sig=53);">
-                        <h2>Random Text 3</h2>
                     </div>
                 </div>
                 <!-- !swiper slides -->
@@ -175,19 +168,94 @@
             </div>
         </div>
 
+
+        <h2>Slider 2</h2>
+        <div class="box_figure">
+            <div class="swiper-per-wrap">
+                <div class="swiper-btns">
+                    <a href="#" class="btn btn-secondary float-right ml-4">더보기</a>
+                    <div class="swiper-button-next btn btn-outline-secondary float-right"><i class="bi bi-chevron-right"></i></div>
+                    <div class="swiper-button-prev btn btn-outline-secondary float-right"><i class="bi bi-chevron-left"></i></div>
+                </div>
+
+                <!-- Swiper -->
+                <div class="swiper-container swiper-per">
+                    <div class="swiper-wrapper">
+                        <!-- https://source.unsplash.com/random/430x360 -->
+                        <div class="swiper-slide">
+                            <a href="#" class="item-wrap">
+                                <img src="https://images.unsplash.com/photo-1617541224621-c6dbd1bb5bbb?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=360&ixlib=rb-1.2.1&q=80&w=430" alt="" class="img-thumbnail">
+                                <div class="item-hover">
+                                    CPU, 메모리, HDD, SSD, 소프트웨어 등
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="item-wrap">
+                                <img src="https://images.unsplash.com/photo-1616236740564-3e4624330c88?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=360&ixlib=rb-1.2.1&q=80&w=430" alt="" class="img-thumbnail">
+                                <div class="item-hover">
+                                    이마트, 롯데마트, 홈플러스, 하이마트, 전자랜드
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="item-wrap">
+                                <img src="https://images.unsplash.com/photo-1616074771284-da1408bade10?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=360&ixlib=rb-1.2.1&q=80&w=430" alt="" class="img-thumbnail">
+                                <div class="item-hover">
+                                    모니터, 프린터/복합기, 키보드,
+                                    마우스, 웹캠, 외장하드 등
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="item-wrap">
+                                <img src="https://images.unsplash.com/photo-1617627422489-cfadc62671a1?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=360&ixlib=rb-1.2.1&q=80&w=430" alt="" class="img-thumbnail">
+                                <div class="item-hover">
+                                    전국 집단상가 내 도/소매점, 오픈마켓 판매업체 등
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="item-wrap">
+                                <img src="https://images.unsplash.com/photo-1615621726856-c366e37565d2?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=360&ixlib=rb-1.2.1&q=80&w=430" alt="" class="img-thumbnail">
+                                <div class="item-hover">
+                                    이마트, 롯데마트, 홈플러스, 하이마트, 전자랜드
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- pagination dots -->
+                <div class="swiper-pagination mt-3"></div>
+                <!-- !pagination dots -->
+        </div>
     </div>
 </div>
 
 <script>
-  var Swipes = new Swiper('.swiper-container', {
+  var Swipes = new Swiper('.swiper-container.swiper-full', {
     loop: true,
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: '.swiper-full .swiper-button-next',
+      prevEl: '.swiper-full .swiper-button-prev',
     },
     pagination: {
-      el: '.swiper-pagination',
+      el: '.swiper-full.swiper-pagination',
       clickable : true,
+    },
+  });
+
+  var swiper2 = new Swiper('.swiper-container.swiper-per', {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    autoplay: true,
+    navigation: {
+      nextEl: '.swiper-per-wrap .swiper-button-next',
+      prevEl: '.swiper-per-wrap .swiper-button-prev',
+    },
+    pagination: {
+      el: '.swiper-per-wrap .swiper-pagination',
+      clickable: true,
     },
   });
 </script>
